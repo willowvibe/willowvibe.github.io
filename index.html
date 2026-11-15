@@ -1,15 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WillowVibe — Data Engineering Studio</title>
+  <meta name="description" content="WillowVibe builds self-hosted data engineering tooling: PipelineProbe audits Airflow, dbt and warehouse health; ObservaKit adds observability and FinOps. Live demos and source.">
+  <link rel="canonical" href="https://willowvibe.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WillowVibe">
+  <meta property="og:title" content="WillowVibe — Data Engineering Studio">
+  <meta property="og:description" content="Self-hosted tooling for Airflow, dbt and modern warehouses: pipeline audits, observability and cost visibility without vendor lock-in.">
+  <meta property="og:url" content="https://willowvibe.github.io/">
+  <meta property="og:image" content="https://willowvibe.github.io/assets/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WillowVibe — Data Engineering Studio">
+  <meta name="twitter:description" content="Self-hosted tooling for Airflow, dbt and modern warehouses: pipeline audits, observability and cost visibility without vendor lock-in.">
+  <meta name="twitter:image" content="https://willowvibe.github.io/assets/og-card.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>WillowVibe</h1>
-    <p>Data engineering studio. The full portfolio page is being published.</p>
-    <p><a href="https://www.willowvibe.com/contact">Contact</a></p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="WillowVibe home">
+        <img src="assets/willowvibe-logo.png" alt="" width="32" height="32">
+        <span>WillowVibe</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="https://github.com/willowvibe">GitHub</a>
+        <a class="nav-contact" href="https://www.willowvibe.com/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <p class="eyebrow">WillowVibe · Data Engineering Studio</p>
+        <h1 id="hero-title">Data engineering that ships —<br><span class="accent">and keeps itself observable.</span></h1>
+        <p class="lede">Self-hosted tooling for Airflow, dbt and modern warehouses: pipeline audits, observability and cost visibility without vendor lock-in.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://www.willowvibe.com/contact">Audit my pipelines</a>
+          <a class="button button-secondary" href="#work">See the tools</a>
+        </div>
+        <ul class="stack" aria-label="Stack">
+          <li>Airflow</li>
+          <li>dbt</li>
+          <li>Postgres</li>
+          <li>BigQuery</li>
+          <li>Snowflake</li>
+          <li>Grafana</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="work-title">Proof of work</h2>
+          <p>Two tools, both running in public. Open the demos or read the source — the claims are the links.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <a class="card-media" href="https://willowvibe.github.io/pipelineprobe/" aria-label="Open the PipelineProbe live demo">
+              <img src="https://willowvibe.github.io/pipelineprobe/assets/poster.jpg" alt="PipelineProbe title card: find the pipeline risks your green checkmarks hide." width="1920" height="1080" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>PipelineProbe</h3>
+              <p class="card-problem">One command, one HTML report: audit Airflow, dbt and warehouse health before a migration or after an incident.</p>
+              <p class="card-proves"><span>What it proves</span> An installable CLI on PyPI, a deterministic Docker quickstart, and a live sample report.</p>
+              <div class="card-links">
+                <a href="https://willowvibe.github.io/pipelineprobe/">Live demo</a>
+                <a href="https://github.com/willowvibe/pipelineprobe">Source</a>
+                <code>pip install pipelineprobe==0.3.1</code>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-media" href="https://willowvibe.github.io/ObservaKit/" aria-label="Open the ObservaKit live demo">
+              <img src="https://willowvibe.github.io/ObservaKit/observakit-demo-poster-v2.jpg" alt="ObservaKit freshness dashboard showing healthy, warning and stale table counts." width="1920" height="1080" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>ObservaKit</h3>
+              <p class="card-problem">Self-hosted data observability and FinOps starter kit: freshness, volume and schema checks, plus cloud cost tracking.</p>
+              <p class="card-proves"><span>What it proves</span> A full stack that runs with Docker Compose — Airflow, dbt, Postgres and Grafana — with zero vendor lock-in.</p>
+              <div class="card-links">
+                <a href="https://willowvibe.github.io/ObservaKit/">Live demo</a>
+                <a href="https://github.com/willowvibe/ObservaKit">Source</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="also" aria-labelledby="also-title">
+          <div>
+            <h2 id="also-title">Also public</h2>
+            <p><strong>creative_bundle</strong> — the five-repo Claude Code workspace behind my video and AI tooling.</p>
+          </div>
+          <a href="https://github.com/willowvibe/creative_bundle">View the bundle</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact-band" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <div>
+          <h2 id="contact-title">Have a pipeline that needs a second opinion?</h2>
+          <p>Audits, migrations, observability and cost reviews. Tell me what is keeping you up at night.</p>
+        </div>
+        <a class="button button-primary" href="https://www.willowvibe.com/contact">Start a conversation</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 WillowVibe · Built in Bengaluru, India</p>
+      <nav aria-label="Footer">
+        <a href="https://www.willowvibe.com/contact">Contact</a>
+        <a href="mailto:hello@willowvibe.com">hello@willowvibe.com</a>
+        <a href="https://github.com/willowvibe">GitHub</a>
+        <a href="https://www.linkedin.com/company/willowvibe/">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
