@@ -9,11 +9,12 @@ Live: <https://willowvibe.github.io/>
 
 | File | Purpose |
 |---|---|
-| `index.html` | The whole page: hero, project cards, contact band, footer |
+| `index.html` | The whole page: hero, project cards, client work, contact band, footer |
 | `styles.css` | All styles; no preprocessor, no framework |
 | `404.html` | Served by GitHub Pages for unknown paths |
-| `assets/favicon.svg` | Browser tab mark |
-| `assets/willowvibe-logo.png` | Wordmark used in the header (copied from ObservaKit) |
+| `robots.txt` | Allows all crawlers and points to the sitemap |
+| `sitemap.xml` | Lists the hub root for search engines |
+| `assets/favicon.svg` | Browser tab mark used in the header |
 | `assets/og-card.png` | 1200×630 social card |
 | `.github/workflows/pages.yml` | Deploy on every push to `main` |
 
@@ -22,8 +23,16 @@ There is no build step and no client-side JavaScript.
 ## Update a project link
 
 All project copy and links live in `index.html` inside the `<section id="work">`
-block. Each card has one media link, one heading, a problem line, a
+block. Each tool card has one media link, one heading, a problem line, a
 "What it proves" line, and a link row. Change the `href` values in place.
+
+## Client work
+
+The "Client work" section (inside `<section id="work">`, after the two tool
+cards) lists live client sites: Cosmic Saju (<https://www.cosmicsaju.com>) and
+Dikshithra Atelier (<https://dikshithra.com>). Each is a compact card with a
+heading, a one-line description, a "Visit site" link and a "Live" status badge.
+Update the copy and `href` values in place.
 
 ## Update the install version
 

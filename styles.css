@@ -481,14 +481,38 @@ h3 {
     align-items: flex-start;
   }
 
-  .also {
+.client-work {
+  margin-top: 56px;
+}
+
+.client-work .cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.client-work .card-body {
+  padding: 22px 24px;
+}
+
+.status {
+  padding: 3px 10px;
+  border: 1px solid var(--success);
+  border-radius: 999px;
+  color: var(--success);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.also {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
 @media (max-width: 720px) {
-  .cards {
+  .cards,
+  .client-work .cards {
     grid-template-columns: 1fr;
   }
 }
