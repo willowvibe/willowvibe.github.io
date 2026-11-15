@@ -28,8 +28,8 @@ block. Each card has one media link, one heading, a problem line, a
 ## Update the install version
 
 The PipelineProbe card contains `pip install pipelineprobe==0.3.1`. When a new
-release ships, change that pin here. Keep the version identical to the one in
-`pipelineprobe`'s README.
+release ships, change the pin in `index.html` to match the latest
+`pipelineprobe` release (currently 0.3.1).
 
 ## Update media
 
@@ -55,13 +55,27 @@ gh api -X POST repos/willowvibe/willowvibe.github.io/pages -f build_type=workflo
 
 `404.html` at the root is what Pages serves for unknown paths.
 
+The repository's social preview image is a manual GitHub setting (Settings →
+General → Social preview → upload `assets/og-card.png`); it cannot be set from
+code.
+
 ## Verify a change
 
 ```bash
-# every outbound link returns 200
-grep -oE 'https?://[^"]+' index.html | sort -u | while read -r u; do
-  printf '%s %s\n' "$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 15 "$u")" "$u"
+# every outbound link returns 200 (LinkedIn returns 403 to automated clients by design)
+bad=""
+for u in $(grep -oE 'https?://[^"]+' index.html | sort -u); do
+  status=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 15 "$u")
+  printf '%s %s\n' "$status" "$u"
+  if [ "$status" != "200" ] && [ "$u" != "https://www.linkedin.com/company/willowvibe/" ]; then
+    bad="$bad $status $u"
+  fi
 done
+if [ -n "$bad" ]; then
+  printf 'non-200 links:%s\n' "$bad" >&2
+  exit 1
+fi
+printf 'All links 200 (LinkedIn 403 to automated clients is the accepted exception).\n'
 
 # HTML validity
 npx --yes html-validate@11.21.1 index.html 404.html
