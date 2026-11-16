@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WillowVibe — Data Engineering Studio</title>
-  <meta name="description" content="WillowVibe builds self-hosted data engineering tooling: PipelineProbe audits Airflow, dbt and warehouse health; ObservaKit adds observability and FinOps; plm-bom-pipeline models synthetic PLM data into tested dbt marts. Live demos and source.">
+  <meta name="description" content="WillowVibe builds self-hosted tooling: PipelineProbe audits Airflow, dbt and warehouse health; ObservaKit adds observability and FinOps; plm-bom-pipeline models synthetic PLM data into tested dbt marts; HealLog is an offline-first clinical practice manager. Live demos and source.">
   <link rel="canonical" href="https://willowvibe.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#0a0a0a">
@@ -81,7 +81,7 @@
       <div class="container">
         <div class="section-head">
           <h2 id="work-title">Proof of work</h2>
-          <p>Three tools, all open source, with public demos. Their demos run on synthetic or bundled sample data — no client or production data.</p>
+          <p>Four tools, all open source, with public demos. Their demos run on synthetic or bundled sample data — no client or production data.</p>
         </div>
 
         <div class="cards">
@@ -128,6 +128,21 @@
                 <a href="https://willowvibe.github.io/plm-bom-pipeline/">Live demo</a>
                 <a href="https://github.com/willowvibe/plm-bom-pipeline">Source</a>
                 <code>make demo</code>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-media" href="https://willowvibe.github.io/heal-log/" aria-label="Open the HealLog live demo">
+              <img src="https://willowvibe.github.io/heal-log/og-card.jpg" alt="HealLog dashboard: patient totals, a twelve-month growth chart and a care-group split." width="1200" height="630" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>HealLog</h3>
+              <p class="card-problem">A clinical practice manager for small clinics: patient records and visit notes that keep working offline and sync when the network comes back.</p>
+              <p class="card-proves"><span>What it proves</span> Offline-first sync with soft deletes and batched pull, revocable JWT auth, and a dashboard whose every number comes from the API — in four local commands, on synthetic data.</p>
+              <div class="card-links">
+                <a href="https://willowvibe.github.io/heal-log/">Live demo</a>
+                <a href="https://github.com/willowvibe/heal-log">Source</a>
               </div>
             </div>
           </article>

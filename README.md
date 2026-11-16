@@ -1,6 +1,6 @@
 # willowvibe.github.io
 
-The WillowVibe portfolio hub — one static page that links the three shipped tools,
+The WillowVibe portfolio hub — one static page that links the four shipped tools,
 their live demos, and the contact path.
 
 Live: <https://willowvibe.github.io/>
