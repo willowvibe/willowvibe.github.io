@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WillowVibe — Data Engineering Studio</title>
-  <meta name="description" content="WillowVibe builds self-hosted data engineering tooling: PipelineProbe audits Airflow, dbt and warehouse health; ObservaKit adds observability and FinOps. Live demos and source.">
+  <meta name="description" content="WillowVibe builds self-hosted data engineering tooling: PipelineProbe audits Airflow, dbt and warehouse health; ObservaKit adds observability and FinOps; plm-bom-pipeline models synthetic PLM data into tested dbt marts. Live demos and source.">
   <link rel="canonical" href="https://willowvibe.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#0a0a0a">
@@ -81,7 +81,7 @@
       <div class="container">
         <div class="section-head">
           <h2 id="work-title">Proof of work</h2>
-          <p>Two tools, both open source, with public demos. Both demos run on sample data from their bundled quickstart stacks — no client or production data.</p>
+          <p>Three tools, all open source, with public demos. Their demos run on synthetic or bundled sample data — no client or production data.</p>
         </div>
 
         <div class="cards">
@@ -112,6 +112,22 @@
               <div class="card-links">
                 <a href="https://willowvibe.github.io/ObservaKit/">Live demo</a>
                 <a href="https://github.com/willowvibe/ObservaKit">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-media" href="https://willowvibe.github.io/plm-bom-pipeline/" aria-label="Open the plm-bom-pipeline live demo">
+              <img src="https://willowvibe.github.io/plm-bom-pipeline/plm-bom-pipeline-demo-poster.jpg" alt="plm-bom-pipeline report: 18 products, 2,000 parts and a five-level BOM depth chart." width="1920" height="1080" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>plm-bom-pipeline</h3>
+              <p class="card-problem">A synthetic bicycle manufacturer's PLM data — parts, five-level BOMs and ECR/ECO/ECN change control — modelled into seven tested dbt marts on DuckDB.</p>
+              <p class="card-proves"><span>What it proves</span> PLM domain modelling with 195 checks, a seven-defect attribution harness, a static report and a narrated walkthrough.</p>
+              <div class="card-links">
+                <a href="https://willowvibe.github.io/plm-bom-pipeline/">Live demo</a>
+                <a href="https://github.com/willowvibe/plm-bom-pipeline">Source</a>
+                <code>make demo</code>
               </div>
             </div>
           </article>

@@ -1,6 +1,6 @@
 # willowvibe.github.io
 
-The WillowVibe portfolio hub — one static page that links the two shipped tools,
+The WillowVibe portfolio hub — one static page that links the three shipped tools,
 their live demos, and the contact path.
 
 Live: <https://willowvibe.github.io/>
@@ -28,7 +28,7 @@ block. Each tool card has one media link, one heading, a problem line, a
 
 ## Client work
 
-The "Client work" section (inside `<section id="work">`, after the two tool
+The "Client work" section (inside `<section id="work">`, after the three tool
 cards) lists live client sites: Cosmic Saju (<https://www.cosmicsaju.com>) and
 Dikshithra Atelier (<https://dikshithra.com>). Each is a compact card with a
 heading, a one-line description, a "Visit site" link and a "Live" status badge.
