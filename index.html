@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WillowVibe — Data Engineering Studio</title>
-  <meta name="description" content="WillowVibe builds self-hosted data engineering tooling: PipelineProbe audits Airflow, dbt and warehouse health; ObservaKit adds observability and FinOps; plm-bom-pipeline models synthetic PLM data into tested dbt marts. Live demos and source.">
+  <meta name="description" content="WillowVibe builds self-hosted data engineering tooling: PipelineProbe audits Airflow, dbt and warehouse health; ObservaKit adds observability and FinOps; plm-bom-pipeline models synthetic PLM data into tested dbt marts; rag-docs-chatbot answers questions with page-level citations. Live demos and source.">
   <link rel="canonical" href="https://willowvibe.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#0a0a0a">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="WillowVibe">
   <meta property="og:title" content="WillowVibe — Data Engineering Studio">
-  <meta property="og:description" content="Self-hosted tooling for Airflow, dbt and modern warehouses: pipeline audits, observability and cost visibility without vendor lock-in.">
+  <meta property="og:description" content="Self-hosted tooling for Airflow, dbt and modern warehouses: pipeline audits, observability and cost visibility without vendor lock-in; rag-docs-chatbot answers questions with page-level citations.">
   <meta property="og:url" content="https://willowvibe.github.io/">
   <meta property="og:image" content="https://willowvibe.github.io/assets/og-card.png">
   <meta property="og:image:width" content="1200">
@@ -19,7 +19,7 @@
   <meta property="og:image:alt" content="WillowVibe — data engineering that ships and keeps itself observable.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="WillowVibe — Data Engineering Studio">
-  <meta name="twitter:description" content="Self-hosted tooling for Airflow, dbt and modern warehouses: pipeline audits, observability and cost visibility without vendor lock-in.">
+  <meta name="twitter:description" content="Self-hosted tooling for Airflow, dbt and modern warehouses: pipeline audits, observability and cost visibility without vendor lock-in; rag-docs-chatbot answers questions with page-level citations.">
   <meta name="twitter:image" content="https://willowvibe.github.io/assets/og-card.png">
   <meta name="twitter:image:alt" content="WillowVibe — data engineering that ships and keeps itself observable.">
   <link rel="stylesheet" href="styles.css">
@@ -81,7 +81,7 @@
       <div class="container">
         <div class="section-head">
           <h2 id="work-title">Proof of work</h2>
-          <p>Three tools, all open source, with public demos. Their demos run on synthetic or bundled sample data — no client or production data.</p>
+          <p>Four tools, all open source, with public demos. Their demos run on synthetic, bundled or public sample data — no client or production data.</p>
         </div>
 
         <div class="cards">
@@ -128,6 +128,23 @@
                 <a href="https://willowvibe.github.io/plm-bom-pipeline/">Live demo</a>
                 <a href="https://github.com/willowvibe/plm-bom-pipeline">Source</a>
                 <code>make demo</code>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-media" href="https://willowvibe.github.io/rag-docs-chatbot/" aria-label="Open the rag-docs-chatbot walkthrough">
+              <img src="https://willowvibe.github.io/rag-docs-chatbot/assets/rag-docs-chatbot-demo-poster-v2.jpg" alt="rag-docs-chatbot answering a question about NIST password rules, with the cited passage highlighted on its source page." width="1920" height="1080" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>rag-docs-chatbot</h3>
+              <p class="card-problem">Ask questions of a document set and get answers that cite the exact page — or an explicit "I don't know". Runs over two public NIST digital-identity standards.</p>
+              <p class="card-proves"><span>What it proves</span> Retrieval you can check: FastAPI, Postgres + pgvector, hybrid search and reranking, a 40-question evaluation (87.5% evidence hit@5), and a public demo on a free open model with a fair per-visitor limit.</p>
+              <div class="card-links">
+                <a href="https://rag-docs-chatbot-three.vercel.app">Live demo</a>
+                <a href="https://willowvibe.github.io/rag-docs-chatbot/">Walkthrough</a>
+                <a href="https://github.com/willowvibe/rag-docs-chatbot">Source</a>
+                <code>docker compose up</code>
               </div>
             </div>
           </article>
