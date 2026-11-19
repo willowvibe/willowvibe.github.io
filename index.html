@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WillowVibe — Data Engineering Studio</title>
-  <meta name="description" content="WillowVibe builds self-hosted data engineering tooling: PipelineProbe audits Airflow, dbt and warehouse health; ObservaKit adds observability and FinOps; plm-bom-pipeline models synthetic PLM data into tested dbt marts; rag-docs-chatbot answers questions with page-level citations. Live demos and source.">
+  <meta name="description" content="WillowVibe builds self-hosted data engineering tooling: PipelineProbe audits Airflow, dbt and warehouse health; ObservaKit adds observability and FinOps; plm-bom-pipeline models synthetic PLM data into tested dbt marts; data-pipeline-template generates a tested dbt + Airflow project in one command; rag-docs-chatbot answers questions with page-level citations. Live demos and source.">
   <link rel="canonical" href="https://willowvibe.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#0a0a0a">
@@ -145,6 +145,23 @@
                 <a href="https://willowvibe.github.io/rag-docs-chatbot/">Walkthrough</a>
                 <a href="https://github.com/willowvibe/rag-docs-chatbot">Source</a>
                 <code>docker compose up</code>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <a class="card-media" href="https://willowvibe.github.io/data-pipeline-template/#demo" aria-label="Watch the data-pipeline-template demo">
+              <img src="https://willowvibe.github.io/data-pipeline-template/data-pipeline-template-demo-poster.jpg" alt="Airflow grid for the generated weather_pipeline DAG: every extract, load and Cosmos dbt task green across two runs." width="1920" height="1080" loading="lazy">
+            </a>
+            <div class="card-body">
+              <h3>data-pipeline-template</h3>
+              <p class="card-problem">Every client data project starts with the same week of plumbing. One Copier command generates it: ingestion, a warehouse, dbt models and tests, CI, Docker and optional Airflow.</p>
+              <p class="card-proves"><span>What it proves</span> Templates that actually run: all four DuckDB/Postgres × none/Airflow combinations are rendered and executed in CI, including a real <code>make up</code> Airflow stack that must finish every DAG run, and <code>copier update</code> is tested from the release tag.</p>
+              <div class="card-links">
+                <a href="https://willowvibe.github.io/data-pipeline-template/#demo">Watch demo</a>
+                <a href="https://willowvibe.github.io/data-pipeline-template/">Docs &amp; lineage</a>
+                <a href="https://github.com/willowvibe/data-pipeline-template">Source</a>
+                <code>copier copy gh:willowvibe/data-pipeline-template</code>
               </div>
             </div>
           </article>
