@@ -1,8 +1,8 @@
 # willowvibe.github.io
 
-The WillowVibe portfolio hub — one static page that links the four shipped tools,
+The WillowVibe portfolio hub — one static page that links the five shipped tools,
 their live demos, and the contact path. The tools are PipelineProbe, ObservaKit,
-plm-bom-pipeline and rag-docs-chatbot.
+plm-bom-pipeline, data-pipeline-template and rag-docs-chatbot.
 
 Live: <https://willowvibe.github.io/>
 
@@ -29,7 +29,7 @@ block. Each tool card has one media link, one heading, a problem line, a
 
 ## Client work
 
-The "Client work" section (inside `<section id="work">`, after the four tool
+The "Client work" section (inside `<section id="work">`, after the five tool
 cards) lists live client sites: Cosmic Saju (<https://www.cosmicsaju.com>) and
 Dikshithra Atelier (<https://dikshithra.com>). Each is a compact card with a
 heading, a one-line description, a "Visit site" link and a "Live" status badge.
@@ -48,6 +48,7 @@ Project posters are hotlinked, not stored here:
 - PipelineProbe: `https://willowvibe.github.io/pipelineprobe/assets/poster.jpg`
 - ObservaKit: `https://willowvibe.github.io/ObservaKit/observakit-demo-poster-v2.jpg`
 - plm-bom-pipeline: `https://willowvibe.github.io/plm-bom-pipeline/plm-bom-pipeline-demo-poster.jpg`
+- data-pipeline-template: `https://willowvibe.github.io/data-pipeline-template/data-pipeline-template-demo-poster.jpg`
 - rag-docs-chatbot: `https://willowvibe.github.io/rag-docs-chatbot/assets/rag-docs-chatbot-demo-poster-v2.jpg`
 
 If a project site moves, update both the `<img src>` and the card's demo link.
